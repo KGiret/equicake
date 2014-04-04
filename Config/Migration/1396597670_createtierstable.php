@@ -63,8 +63,8 @@ class CreateTiersTable extends CakeMigration {
 					'tiers'
 				),
 			),
-		)
-	)
+		),
+	);
 
 /**
  * Before migration callback
