@@ -58,12 +58,12 @@ class CreateTiersTable extends CakeMigration {
 					),
 				),
 			),
-			'down' => array(
-				'drop_table' => array(
-					'tiers'
-				),
-			),
 		),
+		'down' => array(
+			'drop_table' => array(
+				'tiers'
+			),
+		),		
 	);
 
 /**
