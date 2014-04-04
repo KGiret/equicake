@@ -57,13 +57,14 @@ class CreateTiersTable extends CakeMigration {
 						'engine' => 'InnoDB'
 					),
 				),
-		),
-		'down' => array(
-			'drop_table' => array(
-				'tiers'
 			),
-		),
-	);
+			'down' => array(
+				'drop_table' => array(
+					'tiers'
+				),
+			),
+		)
+	)
 
 /**
  * Before migration callback
