@@ -34,14 +34,6 @@ class Initmigration extends CakeMigration {
 					),
 					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
 				),
-				'roles' => array(
-					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 10, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-					'indexes' => array(
-						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-					),
-					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
-				),
 				'screenshots' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 25, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
@@ -75,7 +67,7 @@ class Initmigration extends CakeMigration {
 		),
 		'down' => array(
 			'drop_table' => array(
-				'articles', 'roles', 'screenshots', 'settings', 'videos'
+				'articles', 'screenshots', 'settings', 'videos'
 			),
 		),
 	);
