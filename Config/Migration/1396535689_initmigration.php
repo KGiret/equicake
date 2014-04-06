@@ -34,22 +34,6 @@ class Initmigration extends CakeMigration {
 					),
 					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
 				),
-				'players' => array(
-					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 20, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-					'classe_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'key' => 'index'),
-					'specialite_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'key' => 'index'),
-					'role_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'key' => 'index'),
-					'rank_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'key' => 'index'),
-					'indexes' => array(
-						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'classe_id' => array('column' => 'classe_id', 'unique' => 0),
-						'spe_id' => array('column' => 'specialite_id', 'unique' => 0),
-						'role_id' => array('column' => 'role_id', 'unique' => 0),
-						'rang_id' => array('column' => 'rank_id', 'unique' => 0),
-					),
-					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
-				),
 				'ranks' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 11, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
@@ -110,7 +94,7 @@ class Initmigration extends CakeMigration {
 		),
 		'down' => array(
 			'drop_table' => array(
-				'articles', 'classes', 'players', 'ranks', 'roles', 'screenshots', 'settings', 'specialties', 'videos'
+				'articles', 'ranks', 'roles', 'screenshots', 'settings', 'specialties', 'videos'
 			),
 		),
 	);
