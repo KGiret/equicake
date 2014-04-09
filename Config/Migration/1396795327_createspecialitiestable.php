@@ -1,5 +1,5 @@
 <?php
-class Createspecialtiestable extends CakeMigration {
+class Createspecialitiestable extends CakeMigration {
 
 /**
  * Migration description
@@ -18,7 +18,7 @@ class Createspecialtiestable extends CakeMigration {
 	public $migration = array(
 		'up' => array(
 			'create_table' => array(
-				'specialties' => array(
+				'specialities' => array(
 					'id' => array(
 						'type' => 'integer', 
 						'null' => false, 
