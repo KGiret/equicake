@@ -34,16 +34,7 @@ class Initmigration extends CakeMigration {
 					),
 					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
 				),
-				'screenshots' => array(
-					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 25, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-					'tier_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 2, 'key' => 'index'),
-					'indexes' => array(
-						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'tier_id' => array('column' => 'tier_id', 'unique' => 0),
-					),
-					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
-				),
+				
 				'settings' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'contents' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 5000, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
@@ -52,22 +43,12 @@ class Initmigration extends CakeMigration {
 					),
 					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
 				),
-				'videos' => array(
-					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 25, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-					'link' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 100, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-					'tier_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'length' => 2, 'key' => 'index'),
-					'indexes' => array(
-						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'tier_id' => array('column' => 'tier_id', 'unique' => 0),
-					),
-					'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB'),
-				),
+				
 			),
 		),
 		'down' => array(
 			'drop_table' => array(
-				'articles', 'screenshots', 'settings', 'videos'
+				'articles', 'settings'
 			),
 		),
 	);
