@@ -62,6 +62,7 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
+		'driver' => 'mysql',
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -69,6 +70,7 @@ class DATABASE_CONFIG {
 		'password' => '',
 		'database' => 'equinoxx',
 		'prefix' => '',
+		'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock'
 		//'encoding' => 'utf8',
 	);
 

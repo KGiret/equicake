@@ -7,3 +7,81 @@ Stack Trace:
 #3 C:\wamp\www\equinoxx\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-05-02 10:47:06 Error: [MissingTableException] Table videos for model Video was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'videos',
+  'class' => 'Video',
+  'ds' => 'default',
+)
+Request URL: /Equinox/videos
+Stack Trace:
+#0 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(3499): Model->setSource('videos')
+#1 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(2903): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(2875): Model->_readDataSource('all', Array)
+#3 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /Applications/MAMP/htdocs/Equinox/app/Controller/VideosController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: VideosController->index()
+#6 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(VideosController), Array)
+#7 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(VideosController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/Equinox/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-02 10:47:09 Error: [MissingTableException] Table tiers for model Tier was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tiers',
+  'class' => 'Tier',
+  'ds' => 'default',
+)
+Request URL: /Equinox/tiers/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(3499): Model->setSource('tiers')
+#1 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(1355): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/Equinox/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /Applications/MAMP/htdocs/Equinox/lib/Cake/View/Helper/FormHelper.php(467): FormHelper->_introspectModel('Tier', 'fields')
+#4 /Applications/MAMP/htdocs/Equinox/app/View/Tiers/add.ctp(2): FormHelper->create('Tier')
+#5 /Applications/MAMP/htdocs/Equinox/lib/Cake/View/View.php(935): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/Equinox/lib/Cake/View/View.php(897): View->_evaluate('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/Equinox/lib/Cake/View/View.php(466): View->_render('/Applications/M...')
+#8 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#9 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#10 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(TiersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/Equinox/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-02 10:47:18 Error: [MissingTableException] Table tiers for model Tier was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tiers',
+  'class' => 'Tier',
+  'ds' => 'default',
+)
+Request URL: /Equinox/tiers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(3499): Model->setSource('tiers')
+#1 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(2903): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(2875): Model->_readDataSource('all', Array)
+#3 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /Applications/MAMP/htdocs/Equinox/app/Controller/TiersController.php(26): PaginatorComponent->paginate()
+#5 [internal function]: TiersController->index()
+#6 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TiersController), Array)
+#7 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(TiersController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/Equinox/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-02 10:47:32 Error: [MissingTableException] Table articles for model Article was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'articles',
+  'class' => 'Article',
+  'ds' => 'default',
+)
+Request URL: /Equinox/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(3499): Model->setSource('articles')
+#1 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(2903): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/Equinox/lib/Cake/Model/Model.php(2875): Model->_readDataSource('all', Array)
+#3 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#4 /Applications/MAMP/htdocs/Equinox/app/Controller/ArticlesController.php(25): PaginatorComponent->paginate()
+#5 [internal function]: ArticlesController->index()
+#6 /Applications/MAMP/htdocs/Equinox/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ArticlesController), Array)
+#7 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/Equinox/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/Equinox/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
