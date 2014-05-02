@@ -1,0 +1,331 @@
+*{
+	margin : 0 auto;
+	font-family : calibri;
+}
+
+#cms{
+	background :url('../img/background.png') repeat fixed;
+}
+
+#deco_div{
+	margin : 0 auto 10px auto;
+	width : 1019px;
+	height : 30px;
+}
+#deco_button{
+	float : right;
+	border : none;
+}
+
+th, #add_button, #affirmation, #error, input[type="submit"]{
+	background: #444;
+    background: -webkit-linear-gradient( #555, #2C2C2C);
+    background:    -moz-linear-gradient( #555, #2C2C2C);
+    background:     -ms-linear-gradient( #555, #2C2C2C);
+    background:      -o-linear-gradient( #555, #2C2C2C);
+    background:         linear-gradient( #555, #2C2C2C);
+	color : #fff;
+}
+
+#formulaire{
+	background : #fff;
+	border-radius : 10px;
+	box-shadow : 4px 4px 50px #000, -4px -4px 50px #000 ;
+	width : 450px;
+	height : 300px;
+	margin-top : 150px;
+	position : relative;
+}
+
+h1, h2{
+	text-align : center;
+	color : #fff;
+	cursor : default;
+}
+
+h1{
+	font-size : 60px;
+	margin-top : 50px;
+}
+
+h2{
+	font-size : 35px;
+}
+
+#form_error{
+	color : red;
+	position : absolute;
+	top : 15px;
+	left : 20px;
+}
+
+input{
+	font-size : 17px;
+	border-radius : 8px;
+	height : 35px;
+}
+
+input:focus{
+	outline : 0;
+}
+
+input[type="text"], input[type="password"], input[type="file"]{
+	padding : 0 0 0 10px;
+	margin : 50px 0 0 116px;
+}
+
+input[type="submit"]{
+	margin : 50px 0 0 172px;
+	cursor : pointer;
+}
+
+input[type="submit"]:hover{
+	background: #555;
+     background: -webkit-linear-gradient( #777, #333);
+     background:    -moz-linear-gradient( #777, #333);
+     background:     -ms-linear-gradient( #777, #333);
+     background:      -o-linear-gradient( #777, #333);
+     background:         linear-gradient( #777, #333);
+}
+
+input[type="submit"]:active{
+	background: #444;
+     background: -webkit-linear-gradient( #555, #2C2C2C);
+     background:    -moz-linear-gradient( #555, #2C2C2C);
+     background:     -ms-linear-gradient( #555, #2C2C2C);
+     background:      -o-linear-gradient( #555, #2C2C2C);
+     background:         linear-gradient( #555, #2C2C2C);
+     box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+}
+
+#nav{
+	list-style : none;
+	width : 1019px;
+	height : 40px;
+	padding : 0;
+	margin : 45px auto 10px auto;
+	border-radius : 7px;
+	background : #4d4d4d;
+	box-shadow : inset 4px 4px 6px #74746f, inset -4px -4px 6px #74746f ;
+}
+
+#nav li{
+	float : left;
+	font-size : 25px;
+	line-height : 40px;
+	width : 169px;
+	height : 100%;
+	text-align : center;
+	border-right : 1px solid #404040;
+}
+
+#nav li#nav6{
+	border-right : none;
+}
+
+#nav li a{
+	color : #a4a4a4;
+	width : 100px;
+	text-decoration : none;
+	
+}
+
+#nav li a:hover, #nav li.selected a{
+	color : #cd101a
+}
+
+#column{
+	width : 1100px;
+	margin-bottom : 50px;
+	border-radius : 10px;
+	box-shadow : 4px 4px 50px #000, -4px -4px 50px #000 ;
+	background : #fff;
+	overflow : auto;
+	position : relative;
+}
+
+#affirmation, #error{
+	position : absolute;
+	height : 45px;
+	text-align : center;
+	line-height : 45px;
+	font-size : 20px;
+	border-radius : 10px;
+	top : 45px;
+}
+
+#affirmation{
+	color : #fff;
+	width : 350px;
+	left : 375px;
+}
+
+#error{
+	color : red;
+	width : 550px;
+	left : 275px;
+}
+
+h3{
+	font-size : 30px;
+	margin-bottom : 15px;
+	width : 232px;
+}
+
+h3#screenshots, h3#recrutement{
+	width : 300px;
+}
+
+#add_button{
+	
+	border-radius : 5px;
+	padding : 5px;
+	text-decoration : none;
+	margin-top : 15px;
+	margin-left : 265px;
+}
+
+table{
+	margin : 20px auto;
+}
+
+th{
+	padding : 7px 20px 7px 20px;
+}
+
+th#th_nom{
+	border-radius : 7px 0 0 0;
+}
+
+th#th_action{
+	border-radius : 0 7px 0 0;
+}
+
+th, td{
+	text-align : center;
+}
+
+td{
+	border-bottom : 1px solid #444;
+	padding : 1px 10px 1px 10px;
+}
+
+td.td_nom{
+	border-left : 1px solid #444;
+}
+
+td.td_action{
+	border-right : 1px solid #444;
+}
+
+td > a > img{
+	width : 16px;
+	height : 16px;
+	margin-right : 10px;
+}
+
+input[type="text"]#nomVideo, input[type="text"]#nomTier{
+	margin-left : 220px;
+}
+
+input[type="text"]#titreArticle{
+	margin-left: 70px;
+	margin-bottom: 30px;
+}
+
+input[type="text"]#lienVideo, input[type="text"]#numeroTier{
+	margin-left : 60px;
+}
+
+#mce_27{
+	border-radius : 10px;
+	margin-left : 225px;
+	margin-top : 70px;
+}
+
+#mce_45{
+	border-radius : 0 0 10px 10px;
+}
+
+select{
+	padding : 7px;
+	border-radius : 5px;
+	font-size : 15px;
+}
+
+select#videoNumeroTier, select#etatTier, span, select#articleNumeroTier, input[type="date"], select#screenId, select#videoId,
+select#idClass, select#idSpe, select#idRole, select#idRang{
+	margin-left : 60px;
+}
+
+input[type="submit"]#Annul{
+	margin-left : 460px;
+	margin-bottom : 20px;
+}
+
+input[type="submit"]#Ajout{
+	margin-left : 15px;
+}
+
+span{
+	border: 1px solid black;
+	padding: 7px;
+	border-radius: 6px;
+	cursor : default;
+}
+
+input[type="file"]{
+	margin-left : 150px;
+}
+
+td.classe1{
+	color : #ED6BDF;
+}
+
+td.classe2{
+	color : red;
+}
+
+td.classe3{
+	color : #006cd5;
+}
+
+td.classe4{
+	color : green;
+}
+
+td.classe5{
+	color : #06F9BA;
+}
+
+td.classe6{
+	color : purple;
+}
+
+td.classe7{
+	color : #40E0D0;
+}
+
+td.classe8{
+	color : #2a3843;
+}
+
+td.classe9{
+	color : #9D3E0C;
+}
+
+td.classe10{
+	color : #F68406;
+}
+
+td.classe11{
+	color : #FFCC00;
+}
+
+td.Ouvert{
+	color : green;
+}
+
+td.Fermé{
+	color: red;
+}
