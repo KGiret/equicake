@@ -1,0 +1,520 @@
+*{
+	margin : 0 auto;
+	font-family : Calibri;
+}
+
+#cms{
+	background :url('../img/background.png') repeat fixed center top;
+}
+
+header{
+	position : relative;
+	background : url('../img/header-logo.png') no-repeat scroll -30px -30px, url('../img/header-image.png') no-repeat scroll 625px 45px;
+	height : 255px;
+	width : 1020px;
+}
+
+header a#home{
+	display : block;
+	float : left;
+	width: 355px;
+	height: 72px;
+	margin: 82px 0 0 49px;
+}
+
+#top_menu{
+	float : left;
+	background : #ce101a;
+	-webkit-transform: skewX(-40deg); /* chrome, safari*/
+	transform: skewX(-40deg); /* internet explorer , mozilla */
+	width : 436px;
+	height : 37px;
+	margin : 0 0 0 140px;
+	border-radius : 10px 7px 10px 7px;
+}
+
+#top_menu li{
+	list-style : none;
+	float : left;
+	width : 123px;
+	height : 37px;
+	margin: 0 7px 0 15px;
+	text-align : center;
+	white-space : nowrap;
+	-webkit-transform: skewX(40deg); /* chrome, safari*/
+	transform: skewX(40deg); /* internet explorer, mozilla */
+}
+
+#top_menu li#top3{
+	text-align : left;
+}
+
+#top_menu li a{
+	display : block;
+	height : 100%;
+}
+
+#top_menu li#top1 a, #top_menu li#top2 a, #top_menu li#top3 a{
+	text-decoration :none;
+	color : #fff;
+	font-weight: bold;
+	font-size : 20px;
+	line-height : 37px;
+}
+
+#nav{
+	list-style : none;
+	float : left;
+	width : 100%;
+	height : 40px;
+	padding : 0;
+	margin : 45px 0 0 0;
+	border-radius : 7px;
+	background : #4d4d4d;
+	box-shadow : inset 4px 4px 6px #74746f, inset -4px -4px 6px #74746f ;
+}
+
+#nav li{
+	float : left;
+	font-size : 25px;
+	line-height : 40px;
+	width : 169px;
+	height : 100%;
+	text-align : center;
+	border-right : 1px solid #404040;
+}
+
+#nav li#nav6{
+	border-right : none;
+}
+
+#nav li a{
+	color : #a4a4a4;
+	padding : 0 40px 0 40px;
+	text-decoration : none;
+}
+
+#nav li a:hover, #nav li.selected a{
+	color : #cd101a
+}
+
+#column{
+	background : url('../img/bg.png') repeat scroll center top;
+	width: 1020px;
+	overflow :auto;
+	position : relative;
+}
+
+h1{
+	width : 350px;
+	color : #fff; 
+	font-weight : normal;
+	position: absolute;
+	text-align : center;
+	left: -137px;
+	top: 155px;
+	cursor : default;
+	font-size : 40px;
+	margin: 15px 0 0 12px;
+	-ms-transform:rotate(90deg); /* Internet Explorer */
+	-moz-transform:rotate(90deg); /* Firefox */
+	-webkit-transform:rotate(90deg); /* Safari et Chrome */ 
+	-o-transform:rotate(90deg); /* Opera */
+}
+
+h1#titre_mentions{
+	-ms-transform:rotate(0deg); /* Internet Explorer */
+	-moz-transform:rotate(0deg); /* Firefox */
+	-webkit-transform:rotate(0deg); /* Safari et Chrome */ 
+	-o-transform:rotate(0deg);
+	position : relative;
+	top : 0;
+	left : 0;
+	width : 100%;
+	margin-left : 0;
+}
+
+#carousel{
+	margin: 15px 0 0 95px;
+}
+
+#page_img{
+	width : 892px;
+	height : 350px;
+	margin: 15px 0 0 95px;
+}
+
+.left_column{
+	width : 340px;
+	float : left;
+	position : relative;
+}
+
+#left_column_accueil{
+	background: url('../img/left.png') no-repeat scroll -1px top;
+}
+
+#left_column_recrutement, #left_column_roster{
+	background: url('../img/left_recrut.png') no-repeat scroll -1px top;
+}
+
+#left_column_media{
+	background: url('../img/left_media.png') no-repeat scroll -1px top;
+}
+
+#left_column_archives{
+	background: url('../img/left_archives.png') no-repeat scroll -1px top;
+	height : 520px;
+}
+
+.left_column ul{
+	list-style : none
+}
+
+.left_column h2{
+	color : #fff;
+	text-align : center;
+	width : 252px;
+	height : 39px;
+	line-height : 39px;
+	background : url('../img/left_h2.png') no-repeat scroll center top;
+}
+
+#recrutement{
+	margin: 66px 0 0 71px;
+	overflow : auto;
+}
+
+
+#class{
+	float : left;
+	width : 135px;
+	text-transform : uppercase;
+	line-height : 33px;
+	font-size : 14.5px;
+}
+
+#class ul{
+	padding : 5px 0 10px 30px;
+}
+
+#class ul li{
+	height: 30px;
+	padding-top: 4px;
+}
+
+.classe1{
+	color : #ED6BDF;
+}
+
+.classe2{
+	color : red;
+	white-space : nowrap;
+}
+
+.classe3{
+	color : #006cd5;
+}
+
+.classe4{
+	color : green;
+}
+
+.classe5{
+	color : #06F9BA;
+}
+
+.classe6{
+	color : purple;
+}
+
+.classe7{
+	color : #40E0D0;
+}
+
+.classe8{
+	color : #fff;
+}
+
+.classe9{
+	color : #9D3E0C;
+}
+
+.classe10{
+	color : #F68406;
+}
+
+.classe11{
+	color : #FFCC00;
+}
+
+#spe ul{
+	width: 134px;
+	padding: 5px 0 14px 0;
+	margin: 0;
+	float: left;
+}
+
+#spe li{
+	float : left;
+	padding: 4px 5px 0 5px;
+	height: 30px;
+	width: 30px;
+}
+
+#spe li img{
+	width : 30px;
+	height: 30px;
+}
+
+#spe li#spe28, #spe li#spe27, #spe li#spe26, #spe li#spe25{
+	padding-left : 1.5px;
+	padding-right : 1.5px;
+}
+
+#spe li#spe1, #spe li#spe4, #spe li#spe9, #spe li#spe13, #spe li#spe16, #spe li#spe21, #spe li#spe22,
+#spe li#spe29, #spe li#spe33, #spe li#spe10{
+	padding-left : 10px;
+}
+
+.no_recrut{
+	opacity : 0.3;
+}
+
+.recrut_lien{
+	color : #a4a4a4;
+	text-decoration : none;	
+	font-size : 17px;
+}
+
+#recrut_lien1{
+	margin : 0px 0 0 115px;
+}
+
+#recrut_lien2{
+	margin : 0px 0 0 40px;
+}
+
+.recrut_lien:hover{
+	text-decoration : underline;
+}
+
+#twolastvideo{
+	margin : 17px 0 0 71px;
+	height : 387px;
+}
+
+#twolastvideo ul{
+	padding : 10px 0 0 13px;
+}
+
+#twolastvideo li{
+	margin : 5px 0 0 0;
+}
+
+#youtube_link{
+	display: block;
+	position: absolute;
+	width: 75px;
+	height: 250px;
+	top: 660px;
+}
+
+#left_column_media ul li, #left_column_archives ul li{
+	padding : 6px 0 0 0;
+}
+
+#left_column_media ul li a, #left_column_archives ul li a{
+	color : #fff;
+	text-decoration : none;
+	font-size : 17px;
+}
+
+#left_column_media ul li a:hover, #left_column_archives ul li a:hover {
+	text-decoration:  underline;
+}
+
+#left_column_media #screenshot, #left_column_archives #tiers{
+	margin : 51px 0 0 71px;
+}
+
+#left_column_media #video{
+	margin : 25px 0 70px 71px;
+}
+
+#left_column_recrutement #recrutement, #left_column_roster #recrutement{
+	margin : 71px 0 5px 71px;
+}
+
+#center_column{
+	float : left;
+	width : 679px;
+	color : #fff;
+}
+
+#news{
+	list-style : none;
+	margin : 70px 0 0 0;
+}
+
+#old_news{
+	list-style : none;
+	margin : 52px 0 0 0;
+}
+
+#news li, #old_news li{
+	border-bottom : 1px solid red;
+}
+
+#news li#last, #old_news li#last{
+	border : none;
+}
+
+#news h2, #old_news h2{
+	color : #cd101a;
+	font-weight : bold;
+	font-size : 28px;
+}
+
+#news p.date_video, #news p.date_video a, #old_news p.date_video, #old_news p.date_video a {
+	color : #a4a4a4;
+}
+
+#news p.date_video, #old_news p.date_video {
+	margin : 0px 0 15px 0;
+}
+
+#news div.contenu, #old_news div.contenu{
+	font-style : italic;
+	margin : 0px 0 15px 0;
+}
+
+#news img.screenshot, #old_news img.screenshot{
+	border-radius : 15px;
+	margin : 0 0 20px 0;
+	width: 591px;
+	height: 293px;
+}
+
+#news p.screenSoon, #old_news p.screenSoon{
+	color : #a4a4a4;
+	font-size : 16px;
+	margin-left : 240px;
+	margin-bottom : 25px;
+}
+
+#media_title{
+	margin : 56px 0 0 0;
+}
+
+#media{
+	margin : 10px 0 0 0;
+}
+
+.media_screen{
+	width: 315px;
+	float: left;
+	height: 195px;
+	margin: 0 22px 22px 0;
+}
+
+.media_video{
+	margin: 0 22px 0 0;
+}
+
+#roster{
+	margin : 45px 0 0 0;
+}
+
+#tank, #heal, #dps{
+	padding : 34px;
+	position : relative;
+}
+
+#tank > ul, #heal > ul, #dps > ul{
+	padding : 0px;
+	overflow : auto;
+}
+
+#tank > ul > li, #heal > ul > li, #dps > ul > li{
+	list-style : none;
+	border : 1px solid #a4a4a4;
+	width : 250px;
+	float : left;
+}
+
+#tank >  img, #heal >img, #dps > img{
+	position :  absolute;
+	left : 0;
+	top : 0;
+}
+
+#tank  h2, #heal h2, #dps h2{
+	margin : 0 0 15px 15px;
+}
+
+.player_name{
+	list-style : none;
+}
+
+.player_info{
+	padding-bottom : 10px;
+}
+
+#recrut_detail{
+	margin : 50px 0 0 0;
+}
+
+#mentions{
+	color : #fff;
+	text-align : justify;
+	width : 850px;
+	margin : 15px auto;
+}
+
+footer{
+	position : relative;
+	width : 1020px;
+	height : 40px;
+	line-height : 40px;
+	margin-top : 20px;
+	margin-bottom : 20px;
+	border-radius : 7px;
+	background : #4d4d4d;
+	box-shadow : inset 4px 4px 6px #74746f, inset -4px -4px 6px #74746f ;
+	color : #a4a4a4;
+}
+
+footer > p{
+	margin : 0 0 0 10px;
+}
+
+footer > ul{
+	list-style : none;
+		float : right;
+}
+
+footer > ul > li, footer > p {
+	float : left;
+}
+
+footer > ul > li > a{
+	color : #a4a4a4;
+	text-decoration : none;
+	border-right : 1px solid #a4a4a4;
+	padding : 0 10px 0 10px
+}
+
+footer > ul > li#footer_last > a{
+	border : none;
+}
+
+footer > ul > li > a:hover{
+	text-decoration : underline;
+}
+
+footer > ul > li > a > img{
+	width : 45px;
+	height : 40px;
+}
+
