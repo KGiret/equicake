@@ -101,4 +101,10 @@ class Video extends AppModel {
 		)
 	);
 
+		public function beforeSave($options = array())
+	{
+		$this->request->data['name'] = htmlentities($this->request->data['name']);
+
+		return true;
+	}
 }
