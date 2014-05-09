@@ -15,7 +15,7 @@
 	<tr>
 		<td><?php echo h($article['Article']['id']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['title']); ?>&nbsp;</td>
-		<td><?php echo h($article['Article']['contents']); ?>&nbsp;</td>
+		<td><?php echo $article['Article']['contents']; ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['date']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($article['Screenshot']['name'], array('controller' => 'screenshots', 'action' => 'view', $article['Screenshot']['id'])); ?>
