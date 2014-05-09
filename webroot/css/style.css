@@ -3,18 +3,18 @@
 	font-family : Calibri;
 }
 
-#cms{
+body{
 	background :url('../img/background.png') repeat fixed center top;
 }
 
-header{
+#header{
 	position : relative;
 	background : url('../img/header-logo.png') no-repeat scroll -30px -30px, url('../img/header-image.png') no-repeat scroll 625px 45px;
 	height : 255px;
 	width : 1020px;
 }
 
-header a#home{
+#header a#home{
 	display : block;
 	float : left;
 	width: 355px;
@@ -472,7 +472,7 @@ h1#titre_mentions{
 	margin : 15px auto;
 }
 
-footer{
+#footer{
 	position : relative;
 	width : 1020px;
 	height : 40px;
@@ -485,35 +485,35 @@ footer{
 	color : #a4a4a4;
 }
 
-footer > p{
+#footer > p{
 	margin : 0 0 0 10px;
 }
 
-footer > ul{
+#footer > ul{
 	list-style : none;
 		float : right;
 }
 
-footer > ul > li, footer > p {
+#footer > ul > li, #footer > p {
 	float : left;
 }
 
-footer > ul > li > a{
+#footer > ul > li > a{
 	color : #a4a4a4;
 	text-decoration : none;
 	border-right : 1px solid #a4a4a4;
 	padding : 0 10px 0 10px
 }
 
-footer > ul > li#footer_last > a{
+#footer > ul > li#footer_last > a{
 	border : none;
 }
 
-footer > ul > li > a:hover{
+#footer > ul > li > a:hover{
 	text-decoration : underline;
 }
 
-footer > ul > li > a > img{
+#footer > ul > li > a > img{
 	width : 45px;
 	height : 40px;
 }
