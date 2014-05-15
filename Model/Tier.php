@@ -22,19 +22,9 @@ class Tier extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'number' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+		'name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -103,10 +93,4 @@ class Tier extends AppModel {
 		)
 	);
 
-		public function beforeSave($options = array())
-	{
-		$this->request->data['name'] = htmlentities($this->request->data['name']);
-
-		return true;
-	}
 }

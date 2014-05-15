@@ -5,7 +5,6 @@ App::uses('AppController', 'Controller');
  *
  * @property Player $Player
  * @property PaginatorComponent $Paginator
- * @property SessionComponent $Session
  */
 class PlayersController extends AppController {
 
@@ -14,7 +13,7 @@ class PlayersController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator', 'Session');
+	public $components = array('Paginator');
 
 /**
  * index method
@@ -56,11 +55,11 @@ class PlayersController extends AppController {
 				$this->Session->setFlash(__('The player could not be saved. Please, try again.'));
 			}
 		}
-		$classes = $this->Player->Classe->find('list');
-		$specialites = $this->Player->Specialite->find('list');
+		$professions = $this->Player->Profession->find('list');
+		$specialities = $this->Player->Speciality->find('list');
 		$roles = $this->Player->Role->find('list');
 		$ranks = $this->Player->Rank->find('list');
-		$this->set(compact('classes', 'specialites', 'roles', 'ranks'));
+		$this->set(compact('professions', 'specialities', 'roles', 'ranks'));
 	}
 
 /**
@@ -85,11 +84,11 @@ class PlayersController extends AppController {
 			$options = array('conditions' => array('Player.' . $this->Player->primaryKey => $id));
 			$this->request->data = $this->Player->find('first', $options);
 		}
-		$classes = $this->Player->Classe->find('list');
-		$specialites = $this->Player->Specialite->find('list');
+		$professions = $this->Player->Profession->find('list');
+		$specialities = $this->Player->Speciality->find('list');
 		$roles = $this->Player->Role->find('list');
 		$ranks = $this->Player->Rank->find('list');
-		$this->set(compact('classes', 'specialites', 'roles', 'ranks'));
+		$this->set(compact('professions', 'specialities', 'roles', 'ranks'));
 	}
 
 /**
@@ -100,6 +99,103 @@ class PlayersController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
+		$this->Player->id = $id;
+		if (!$this->Player->exists()) {
+			throw new NotFoundException(__('Invalid player'));
+		}
+		$this->request->onlyAllow('post', 'delete');
+		if ($this->Player->delete()) {
+			$this->Session->setFlash(__('The player has been deleted.'));
+		} else {
+			$this->Session->setFlash(__('The player could not be deleted. Please, try again.'));
+		}
+		return $this->redirect(array('action' => 'index'));
+	}
+
+/**
+ * admin_index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		$this->Player->recursive = 0;
+		$this->set('players', $this->Paginator->paginate());
+	}
+
+/**
+ * admin_view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_view($id = null) {
+		if (!$this->Player->exists($id)) {
+			throw new NotFoundException(__('Invalid player'));
+		}
+		$options = array('conditions' => array('Player.' . $this->Player->primaryKey => $id));
+		$this->set('player', $this->Player->find('first', $options));
+	}
+
+/**
+ * admin_add method
+ *
+ * @return void
+ */
+	public function admin_add() {
+		if ($this->request->is('post')) {
+			$this->Player->create();
+			if ($this->Player->save($this->request->data)) {
+				$this->Session->setFlash(__('The player has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The player could not be saved. Please, try again.'));
+			}
+		}
+		$professions = $this->Player->Profession->find('list');
+		$specialities = $this->Player->Speciality->find('list');
+		$roles = $this->Player->Role->find('list');
+		$ranks = $this->Player->Rank->find('list');
+		$this->set(compact('professions', 'specialities', 'roles', 'ranks'));
+	}
+
+/**
+ * admin_edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_edit($id = null) {
+		if (!$this->Player->exists($id)) {
+			throw new NotFoundException(__('Invalid player'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->Player->save($this->request->data)) {
+				$this->Session->setFlash(__('The player has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The player could not be saved. Please, try again.'));
+			}
+		} else {
+			$options = array('conditions' => array('Player.' . $this->Player->primaryKey => $id));
+			$this->request->data = $this->Player->find('first', $options);
+		}
+		$professions = $this->Player->Profession->find('list');
+		$specialities = $this->Player->Speciality->find('list');
+		$roles = $this->Player->Role->find('list');
+		$ranks = $this->Player->Rank->find('list');
+		$this->set(compact('professions', 'specialities', 'roles', 'ranks'));
+	}
+
+/**
+ * admin_delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_delete($id = null) {
 		$this->Player->id = $id;
 		if (!$this->Player->exists()) {
 			throw new NotFoundException(__('Invalid player'));

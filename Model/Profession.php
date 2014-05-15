@@ -1,12 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Speciality Model
+ * Profession Model
  *
- * @property Profession $Profession
- * @property player $Player
+ * @property Player $Player
+ * @property Speciality $Speciality
  */
-class Speciality extends AppModel {
+class Profession extends AppModel {
 
 /**
  * Display field
@@ -19,29 +19,27 @@ class Speciality extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * belongsTo associations
- *
- * @var array
- */
-	public $belongsTo = array(
-		'Profession' => array(
-			'className' => 'Profession',
-			'foreignKey' => 'profession_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
-	);
-
-/**
  * hasMany associations
  *
  * @var array
  */
 	public $hasMany = array(
 		'Player' => array(
-			'className' => 'player',
-			'foreignKey' => 'specialite_id',
+			'className' => 'Player',
+			'foreignKey' => 'profession_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Speciality' => array(
+			'className' => 'Speciality',
+			'foreignKey' => 'profession_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',

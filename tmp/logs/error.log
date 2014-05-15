@@ -7,3 +7,1654 @@ Stack Trace:
 #3 C:\wamp\www\equinoxx\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-05-09 14:36:46 Error: [MissingControllerException] Controller class AccueilController could not be found.
+Exception Attributes: array (
+  'class' => 'AccueilController',
+  'plugin' => NULL,
+)
+Request URL: /equicake/accueil
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-09 14:48:01 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\equicake\app\Config\routes.php, line 22]
+2014-05-09 14:48:01 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /equicake/accueil
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\equ...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\equ...', 22, Array)
+#2 C:\wamp\www\equicake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\equ...', 22, Array)
+#3 C:\wamp\www\equicake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-09 14:51:01 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/hjfhgm
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-09 14:51:38 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/iyfi
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-09 14:52:17 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/iyfi
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-09 14:54:22 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/iyfi
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:02:58 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/professions
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:03:34 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/professions
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:04:06 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/professions
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:04:08 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:05:23 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:05:24 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:05:24 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:05:25 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:05:26 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:06:14 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:08:37 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:08:38 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:08:39 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:08:39 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:08:39 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:08:50 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:08:50 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:08:51 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:08:52 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:09:19 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:09:22 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:09:35 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:26 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Speciality), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Speciality), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\SpecialitiesController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: SpecialitiesController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SpecialitiesController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SpecialitiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:27 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Speciality), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Speciality), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\SpecialitiesController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: SpecialitiesController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SpecialitiesController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SpecialitiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:27 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Speciality), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Speciality), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\SpecialitiesController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: SpecialitiesController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SpecialitiesController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SpecialitiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:28 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Speciality), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Speciality), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\SpecialitiesController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: SpecialitiesController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SpecialitiesController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SpecialitiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:28 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Speciality), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Speciality), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\SpecialitiesController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: SpecialitiesController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SpecialitiesController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SpecialitiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:28 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Speciality), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Speciality), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\SpecialitiesController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: SpecialitiesController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(SpecialitiesController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(SpecialitiesController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:53 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/media
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:10:54 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/media
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:10:56 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:10:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/media
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#3 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#4 C:\wamp\www\equicake\app\Controller\ProfessionsController.php(18): PaginatorComponent->paginate()
+#5 [internal function]: ProfessionsController->index()
+#6 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfessionsController), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProfessionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-05-15 08:11:04 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:11:51 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:11:51 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:11:54 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:13:09 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:13:12 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:13:33 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'equinoxx.classes' doesn't exist
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\Database\Mysql.php(331): DboSource->_execute('SHOW FULL COLUM...')
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(1358): Mysql->describe(Object(AppModel))
+#3 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(2293): Model->schema()
+#4 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1522): DboSource->fields(Object(AppModel), 'Profession', '')
+#5 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1068): DboSource->generateAssociationQuery(Object(Player), Object(AppModel), 'belongsTo', 'Profession', Array, Array, false, NULL)
+#6 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#7 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\equicake\app\Controller\PlayersController.php(26): PaginatorComponent->paginate()
+#10 [internal function]: PlayersController->index()
+#11 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#12 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-05-15 08:18:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:18:59 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:22 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:23 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:23 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:24 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:25 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:25 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:26 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:26 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:26 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:29:31 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:31:35 Warning: Warning (2): include(C:\wamp\www\equicake\app\Controller\ArticlesController.php): failed to open stream: No such file or directory in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:31:35 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening 'C:\wamp\www\equicake\app\Controller\ArticlesController.php' for inclusion (include_path='C:\wamp\www\equicake\lib;.;C:\php\pear') in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:31:35 Error: [MissingControllerException] Controller class ArticlesController could not be found.
+Exception Attributes: array (
+  'class' => 'ArticlesController',
+  'plugin' => NULL,
+)
+Request URL: /equicake/accueil
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:31:37 Warning: Warning (2): include(C:\wamp\www\equicake\app\Controller\PlayersController.php): failed to open stream: No such file or directory in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:31:37 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening 'C:\wamp\www\equicake\app\Controller\PlayersController.php' for inclusion (include_path='C:\wamp\www\equicake\lib;.;C:\php\pear') in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:31:37 Error: [MissingControllerException] Controller class PlayersController could not be found.
+Exception Attributes: array (
+  'class' => 'PlayersController',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:31:38 Warning: Warning (2): include(C:\wamp\www\equicake\app\Controller\ScreenshotsController.php): failed to open stream: No such file or directory in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:31:38 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening 'C:\wamp\www\equicake\app\Controller\ScreenshotsController.php' for inclusion (include_path='C:\wamp\www\equicake\lib;.;C:\php\pear') in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:31:38 Error: [MissingControllerException] Controller class ScreenshotsController could not be found.
+Exception Attributes: array (
+  'class' => 'ScreenshotsController',
+  'plugin' => NULL,
+)
+Request URL: /equicake/media
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:48:34 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:56 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:57 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:52:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:53:35 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:53:58 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/test
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:54:04 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/players
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:10 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/player
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:27 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:33 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:34 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:34 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:35 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:35 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:54:36 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:55:04 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:55:20 Warning: Warning (2): include(C:\wamp\www\equicake\app\Controller\SpecialitiesController.php): failed to open stream: No such file or directory in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:55:20 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening 'C:\wamp\www\equicake\app\Controller\SpecialitiesController.php' for inclusion (include_path='C:\wamp\www\equicake\lib;.;C:\php\pear') in [C:\wamp\www\equicake\lib\Cake\Core\App.php, line 545]
+Trace:
+App::load() - CORE\Cake\Core\App.php, line 545
+App::load() - CORE\Cake\Core\App.php, line 545
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Dispatcher::_loadController() - CORE\Cake\Routing\Dispatcher.php, line 258
+Dispatcher::_getController() - CORE\Cake\Routing\Dispatcher.php, line 227
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 151
+[main] - APP\webroot\index.php, line 108
+
+2014-05-15 08:55:20 Error: [MissingControllerException] Controller class SpecialitiesController could not be found.
+Exception Attributes: array (
+  'class' => 'SpecialitiesController',
+  'plugin' => NULL,
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-15 08:55:34 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-05-15 08:59:48 Error: [MissingTableException] Table professions for model Profession was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'professions',
+  'class' => 'Profession',
+  'ds' => 'default',
+)
+Request URL: /equicake/roster
+Stack Trace:
+#0 C:\wamp\www\equicake\lib\Cake\Model\Model.php(3496): Model->setSource('professions')
+#1 C:\wamp\www\equicake\lib\Cake\Model\Datasource\DboSource.php(1063): Model->getDataSource()
+#2 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2900): DboSource->read(Object(Player), Array)
+#3 C:\wamp\www\equicake\lib\Cake\Model\Model.php(2872): Model->_readDataSource('all', Array)
+#4 C:\wamp\www\equicake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#5 C:\wamp\www\equicake\app\Controller\PlayersController.php(25): PaginatorComponent->paginate()
+#6 [internal function]: PlayersController->index()
+#7 C:\wamp\www\equicake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PlayersController), Array)
+#8 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\equicake\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PlayersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\equicake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

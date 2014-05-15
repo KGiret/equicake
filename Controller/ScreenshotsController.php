@@ -49,7 +49,10 @@ class ScreenshotsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Screenshot->create();
 			if ($this->Screenshot->save($this->request->data)) {
-				return $this->flash(__('The screenshot has been saved.'), array('action' => 'index'));
+				$this->Session->setFlash(__('The screenshot has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The screenshot could not be saved. Please, try again.'));
 			}
 		}
 		$tiers = $this->Screenshot->Tier->find('list');
@@ -69,7 +72,10 @@ class ScreenshotsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Screenshot->save($this->request->data)) {
-				return $this->flash(__('The screenshot has been saved.'), array('action' => 'index'));
+				$this->Session->setFlash(__('The screenshot has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The screenshot could not be saved. Please, try again.'));
 			}
 		} else {
 			$options = array('conditions' => array('Screenshot.' . $this->Screenshot->primaryKey => $id));
@@ -93,8 +99,100 @@ class ScreenshotsController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Screenshot->delete()) {
-			return $this->flash(__('The screenshot has been deleted.'), array('action' => 'index'));
+			$this->Session->setFlash(__('The screenshot has been deleted.'));
 		} else {
-			return $this->flash(__('The screenshot could not be deleted. Please, try again.'), array('action' => 'index'));
+			$this->Session->setFlash(__('The screenshot could not be deleted. Please, try again.'));
 		}
+		return $this->redirect(array('action' => 'index'));
+	}
+
+/**
+ * admin_index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		$this->Screenshot->recursive = 0;
+		$this->set('screenshots', $this->Paginator->paginate());
+	}
+
+/**
+ * admin_view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_view($id = null) {
+		if (!$this->Screenshot->exists($id)) {
+			throw new NotFoundException(__('Invalid screenshot'));
+		}
+		$options = array('conditions' => array('Screenshot.' . $this->Screenshot->primaryKey => $id));
+		$this->set('screenshot', $this->Screenshot->find('first', $options));
+	}
+
+/**
+ * admin_add method
+ *
+ * @return void
+ */
+	public function admin_add() {
+		if ($this->request->is('post')) {
+			$this->Screenshot->create();
+			if ($this->Screenshot->save($this->request->data)) {
+				$this->Session->setFlash(__('The screenshot has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The screenshot could not be saved. Please, try again.'));
+			}
+		}
+		$tiers = $this->Screenshot->Tier->find('list');
+		$this->set(compact('tiers'));
+	}
+
+/**
+ * admin_edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_edit($id = null) {
+		if (!$this->Screenshot->exists($id)) {
+			throw new NotFoundException(__('Invalid screenshot'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			if ($this->Screenshot->save($this->request->data)) {
+				$this->Session->setFlash(__('The screenshot has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The screenshot could not be saved. Please, try again.'));
+			}
+		} else {
+			$options = array('conditions' => array('Screenshot.' . $this->Screenshot->primaryKey => $id));
+			$this->request->data = $this->Screenshot->find('first', $options);
+		}
+		$tiers = $this->Screenshot->Tier->find('list');
+		$this->set(compact('tiers'));
+	}
+
+/**
+ * admin_delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_delete($id = null) {
+		$this->Screenshot->id = $id;
+		if (!$this->Screenshot->exists()) {
+			throw new NotFoundException(__('Invalid screenshot'));
+		}
+		$this->request->onlyAllow('post', 'delete');
+		if ($this->Screenshot->delete()) {
+			$this->Session->setFlash(__('The screenshot has been deleted.'));
+		} else {
+			$this->Session->setFlash(__('The screenshot could not be deleted. Please, try again.'));
+		}
+		return $this->redirect(array('action' => 'index'));
 	}}

@@ -3,10 +3,10 @@ App::uses('AppModel', 'Model');
 /**
  * Player Model
  *
- * @property Classe $Classe
- * @property Specialite $Specialite
+ * @property Profession $Profession
  * @property Role $Role
  * @property Rank $Rank
+ * @property speciality $Speciality
  */
 class Player extends AppModel {
 
@@ -23,49 +23,9 @@ class Player extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'classe_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'specialite_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'role_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'rank_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+		'name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -83,16 +43,9 @@ class Player extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Classe' => array(
-			'className' => 'Classe',
-			'foreignKey' => 'classe_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'Specialities' => array(
-			'className' => 'Specialities',
-			'foreignKey' => 'specialite_id',
+		'Profession' => array(
+			'className' => 'Profession',
+			'foreignKey' => 'profession_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -110,13 +63,13 @@ class Player extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'Speciality' => array(
+			'className' => 'speciality',
+			'foreignKey' => 'specialite_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
-
-		public function beforeSave($options = array())
-	{
-		$this->request->data['name'] = htmlentities($this->request->data['name']);
-
-		return true;
-	}
 }

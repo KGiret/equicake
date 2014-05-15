@@ -1,7 +1,7 @@
 <div class="players form">
 <?php echo $this->Form->create('Player'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Player'); ?></legend>
+		<legend><?php echo __('Y Add Player'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->input('profession_id');

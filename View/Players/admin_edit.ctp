@@ -1,8 +1,9 @@
 <div class="players form">
 <?php echo $this->Form->create('Player'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Player'); ?></legend>
+		<legend><?php echo __('Y Edit Player'); ?></legend>
 	<?php
+		echo $this->Form->input('id');
 		echo $this->Form->input('name');
 		echo $this->Form->input('profession_id');
 		echo $this->Form->input('specialite_id');
@@ -16,6 +17,7 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
+		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Player.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Player.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Players'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Professions'), array('controller' => 'professions', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Profession'), array('controller' => 'professions', 'action' => 'add')); ?> </li>
