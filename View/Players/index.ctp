@@ -1,3 +1,7 @@
+
+<h1 id="titre_roster">Roster</h1>
+<?php echo $this->Html->image(('roster.jpg'),array('id'=>'page_img')); ?>
+
 <div class="players index">
 	<h2><?php echo __('Players'); ?></h2>
 	<table cellpadding="0" cellspacing="0">

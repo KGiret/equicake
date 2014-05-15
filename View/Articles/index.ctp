@@ -1,3 +1,5 @@
+<h1 id="titre_accueil">Dernières News</h1>
+<?php echo $this->Html->image(('nazgrim-10-hm.jpg'),array('id'=>'page_img')); ?>
 <div class="articles index">
 	<h2><?php echo __('Articles'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
