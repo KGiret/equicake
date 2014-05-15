@@ -51,7 +51,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		
 		<ul id="nav">
 			<li id="nav1" 
-			><a href="accueil">News</a></li>
+			><a href="Articles">News</a></li>
 			<li id="nav2"><a href="http://equinoxx.forumpro.fr/" target="blank">Forum</a></li>
 			<li id="nav3" ><a href="roster" >Roster</a></li>
 			<li id="nav4" ><a href="media">Médias</a></li>
@@ -60,7 +60,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</ul>
 
 		</div>
-		<div id="content">
+		<div id="columm">
 
 			<?php echo $this->Session->flash(); ?>
 
