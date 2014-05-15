@@ -518,3 +518,12 @@ h1#titre_mentions{
 	height : 40px;
 }
 
+/* AJOUTS */
+
+#error404 {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	margin-top: -20%;
+	margin-left: 24%;
+}
