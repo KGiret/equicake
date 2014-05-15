@@ -20,6 +20,6 @@ Router::connect('/:controller/:action',		array());*/
  * EquinoXx routing
  */
 Router::connect('/accueil', 				array('controller' => 'articles', 'action' => 'index'));
-Router::connect('/roster', 				array('controller' => 'players', 'action' => 'index'));
-Router::connect('/media', 				array('controller' => 'screenshots', 'action' => 'index'));
+Router::connect('/roster', 					array('controller' => 'players', 'action' => 'index'));
+Router::connect('/media', 					array('controller' => 'screenshots', 'action' => 'index'));
 Router::connect('/archives', 				array('controller' => 'articles', 'action' => 'index'));
