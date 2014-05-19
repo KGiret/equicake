@@ -52,4 +52,16 @@ class Profession extends AppModel {
 		)
 	);
 
+	public function getAll() {
+		$classes = $this->find('all', array(
+			'contain' => false,
+			'fields' => array(
+				'Profession.id',
+				'Profession.name'
+			),
+			'order' => 'Profession.id'
+		));
+		return $classes;
+	}
+
 }
