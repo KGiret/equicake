@@ -49,7 +49,7 @@ class ArticlesController extends AppController {
 			'order' => 'Screenshot.id DESC',
 			'limit' => 5
 		));
-
+//die(var_dump($images));
 		$this->set(compact('articles'));
 		$this->set(compact('videos'));
 		$this->set(compact('classes'));
@@ -57,7 +57,59 @@ class ArticlesController extends AppController {
 		$this->set(compact('images'));
 	}
 
+	public function archives(){
+		$tiers = $this->Article->Tier->find('all', array(
+			'fields' => array(
+				'Tier.name',
+				'Tier.id',
+				'Tier.number'
+			),
+			'contain' => false,
+			'conditions' => array(
+				'Tier.state =' => '0'
+			),
+			'order' => 'Tier.id DESC',
+		));
 
+		if (empty($_GET['idtier'])){
+			$last_tier = $tiers['0']['Tier']['id'];
+
+			$articles = $this->Article->find('all', array(
+				'fields' => array(
+					'Article.id',
+					'Article.title',
+					'Article.contents',
+					'Article.date'
+				),
+				'order' => 'Article.id DESC', 
+				'contain' => array(
+					'Screenshot.name',
+					'Video.link',
+					'Tier.number'					
+				),
+				'conditions' => array('Tier.id =' => $last_tier)
+			));
+		} else{
+			$articles = $this->Article->find('all', array(
+				'fields' => array(
+					'Article.id',
+					'Article.title',
+					'Article.contents',
+					'Article.date'
+				),
+				'order' => 'Article.id DESC', 
+				'contain' => array(
+					'Screenshot.name',
+					'Video.link',
+					'Tier.number'					
+				),
+				'conditions' => array('Tier.id =' => $_GET['idtier'])
+			));
+		}
+//die(var_dump($articles));
+		$this->set(compact('tiers'));
+		$this->set(compact('articles'));
+	}
 /**
  * view method
  *
