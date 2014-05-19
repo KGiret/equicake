@@ -7,7 +7,7 @@ class AppController extends Controller {
 	public $components = array(
 		'Session',
 		'Auth',
-		'Paginator' => array('limit' => 5),
+		'Paginator' => array('limit' => 20),
 		'RequestHandler',
 	);
 
@@ -16,6 +16,6 @@ class AppController extends Controller {
 	);
 
 	public function beforeFilter() {
-		$this->Auth->allow('index', 'feed', 'view', 'top');
+		$this->Auth->allow('index', 'feed', 'view', 'roster', 'accueil', 'archives');
 	}
 }
