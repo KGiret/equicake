@@ -56,7 +56,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<li id="nav1"><a href="<?php echo _racine_ ?>accueil">News</a></li>
 			<li id="nav2"><a href="http://equinoxx.forumpro.fr/" target="blank">Forum</a></li>
 			<li id="nav3"><a href="<?php echo _racine_ ?>roster" >Roster</a></li>
-			<li id="nav4"><a href="<?php echo _racine_ ?>media">Médias</a></li>
+			<li id="nav4"><a href="<?php echo _racine_ ?>screenshots">Médias</a></li>
 			<li id="nav5"><a href="http://equinoxx.forumpro.fr/f3-candidature" target="blank">Apply</a></li>
 			<li id="nav6" ><a href="<?php echo _racine_ ?>archives">Archives</a></li>
 		</ul>
