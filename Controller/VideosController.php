@@ -106,6 +106,47 @@ class VideosController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 
+	public function media() {
+		$this->loadModel('Tier');
+		$tiers = $this->Tier->getAll();
+
+		if (empty($_GET['idtier'])){
+			$last_tier = $tiers['0']['Tier']['id'];
+
+			$videos = $this->Video->find('all', array(
+				'fields' => array(
+					'Video.id',
+					'Video.link'
+				),
+				'order' => 'Video.id DESC', 
+				'contain' => array(
+					'Tier.id',
+					'Tier.number'					
+				),
+				'conditions' => array('Tier.id =' => $last_tier)
+			));
+		} else{
+			if (!$this->Tier->exists($_GET['idtier'])) { 
+				throw new NotFoundException(__('Le tier demandé n\'existe pas')); 
+			}
+			$videos = $this->Video->find('all', array(
+				'fields' => array(
+					'Video.id',
+					'Video.link'
+				),
+				'order' => 'Video.id DESC', 
+				'contain' => array(
+					'Tier.id',
+					'Tier.number'					
+				),
+				'conditions' => array('Tier.id =' => $_GET['idtier'])
+			));
+			
+	}
+	$this->set(compact('videos'));
+	$this->set(compact('tiers'));
+}
+
 /**
  * admin_index method
  *
