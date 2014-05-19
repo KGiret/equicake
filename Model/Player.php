@@ -73,6 +73,22 @@ class Player extends AppModel {
 		)
 	);
 
+	public function getByRole($role) {
+		$players = $this->find('all', array(
+			'fields' => array(
+				'Player.name'
+			),
+			'contain' => array(
+				'Profession.name',
+				'Speciality.name',
+				'Role.name',
+				'Rank.name'
+			),
+			'conditions' => array('Role.name' => $role)
+		));
+		return $players;
+	}
+
 	public function beforeSave($options = array())
 	{
 		$this->request->data['name'] = htmlentities($this->request->data['name']);
