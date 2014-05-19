@@ -106,6 +106,48 @@ class ScreenshotsController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 
+	public function media() {
+		$this->loadModel('Tier');
+		$tiers = $this->Tier->getAll();
+
+		if (empty($_GET['idtier'])){
+			$last_tier = $tiers['0']['Tier']['id'];
+
+			$screenshots = $this->Screenshot->find('all', array(
+				'fields' => array(
+					'Screenshot.id',
+					'Screenshot.name'
+				),
+				'order' => 'Screenshot.id DESC', 
+				'contain' => array(
+					'Tier.id',
+					'Tier.number',
+					'Tier.name'					
+				),
+				'conditions' => array('Tier.id =' => $last_tier)
+			));
+		} else{
+			if (!$this->Tier->exists($_GET['idtier'])) { 
+				throw new NotFoundException(__('Le tier demandé n\'existe pas')); 
+			}
+			$screenshots = $this->Screenshot->find('all', array(
+				'fields' => array(
+					'Screenshot.id',
+					'Screenshot.name'
+				),
+				'order' => 'Screenshot.id DESC', 
+				'contain' => array(
+					'Tier.id',
+					'Tier.number'					
+				),
+				'conditions' => array('Tier.id =' => $_GET['idtier'])
+			));
+			
+	}
+	$this->set(compact('screenshots'));
+	$this->set(compact('tiers'));
+}
+
 /**
  * admin_index method
  *
