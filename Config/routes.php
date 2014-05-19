@@ -1,4 +1,4 @@
-<?php
+j<?php
 Router::connect('/',						array('controller' => 'articles', 'action' => 'accueil'));
 
 /**
@@ -21,7 +21,8 @@ Router::connect('/:controller/:action',		array());*/
  */
 Router::connect('/accueil', 				array('controller' => 'articles', 'action' => 'accueil'));
 Router::connect('/roster', 					array('controller' => 'players', 'action' => 'roster'));
-Router::connect('/media', 					array('controller' => 'screenshots', 'action' => 'index'));
+Router::connect('/screenshots/*',      		array('controller' => 'screenshots', 'action' => 'media'));
+Router::connect('/videos/*', 				array('controller' => 'videos', 'action' => 'media'));
 Router::connect('/archives/*', 				array('controller' => 'articles', 'action' => 'archives'));
 
 
