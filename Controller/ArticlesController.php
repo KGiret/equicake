@@ -8,22 +8,55 @@ App::uses('AppController', 'Controller');
  */
 class ArticlesController extends AppController {
 
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Paginator');
+	public function accueil() {
+		$articles = $this->Article->find('all', array(
+			'fields' => array(
+				'Article.id',
+				'Article.title',
+				'Article.contents',
+				'Article.date'
+			),
+			'order' => 'Article.id DESC', 
+			'contain' => array(
+				'Screenshot.name',
+				'Video.link',
+				'Tier.number'					
+			),
+			'conditions' => array('Tier.state =' => '1')
+		));
+		$videos = $this->Article->Video->find('all', array(
+			'contain' => false,
+			'fields' => array(
+				'Video.id',
+				'Video.link'
+			),   
+			'limit' => 2,
+			'order' => 'Video.id DESC',  		
+		));
 
-/**
- * index method
- *
- * @return void
- */
-	public function index() {
-		$this->Article->recursive = 0;
-		$this->set('articles', $this->Paginator->paginate());
+		$this->loadModel('Profession');
+		$classes = $this->Profession->getAll();
+
+		$this->loadModel('Speciality');
+		$specialities = $this->Speciality->getAll();
+
+		$images = $this->Article->find('all', array(
+			'contain' => array(
+				'Screenshot.id',
+				'Screenshot.name',
+				'Tier.number'
+			),
+			'order' => 'Screenshot.id DESC',
+			'limit' => 5
+		));
+
+		$this->set(compact('articles'));
+		$this->set(compact('videos'));
+		$this->set(compact('classes'));
+		$this->set(compact('specialities'));
+		$this->set(compact('images'));
 	}
+
 
 /**
  * view method
