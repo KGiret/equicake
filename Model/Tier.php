@@ -93,6 +93,19 @@ class Tier extends AppModel {
 		)
 	);
 
+	public function getAll() {
+		$tiers = $this->find('all', array(
+			'fields' => array(
+				'Tier.name',
+				'Tier.id',
+				'Tier.number'
+			),
+			'contain' => false,
+			'order' => 'Tier.id DESC',
+		));
+		return $tiers;
+	}
+
 	public function beforeSave($options = array())
 	{
 		$this->request->data['name'] = htmlentities($this->request->data['name']);
