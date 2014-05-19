@@ -20,9 +20,23 @@ class PlayersController extends AppController {
  *
  * @return void
  */
-	public function index() {
-		$this->Player->recursive = 0;
-		$this->set('players', $this->Paginator->paginate());
+
+	public function roster() {
+		$this->loadModel('Profession');
+		$classes = $this->Profession->getAll();
+
+		$this->loadModel('Speciality');
+		$specialities = $this->Speciality->getAll();
+
+		$tanks = $this->Player->getByRole('tank');
+		$heals = $this->Player->getByRole('heal');
+		$dpss = $this->Player->getByRole('dps');
+
+		$this->set(compact('classes'));
+		$this->set(compact('specialities'));
+		$this->set(compact('tanks'));
+		$this->set(compact('heals'));
+		$this->set(compact('dpss'));
 	}
 
 /**
