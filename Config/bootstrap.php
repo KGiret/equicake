@@ -105,3 +105,9 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+/**
+ * Define path
+ */
+
+define('_racine_', 'http://'.$_SERVER['SERVER_NAME'].'/equicake/');
