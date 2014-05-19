@@ -1,5 +1,5 @@
 <?php
-Router::connect('/',						array('controller' => 'articles', 'action' => 'index'));
+Router::connect('/',						array('controller' => 'articles', 'action' => 'accueil'));
 
 /**
  * Opauth Plugin Routing
@@ -19,7 +19,10 @@ Router::connect('/:controller/:action',		array());*/
 /**
  * EquinoXx routing
  */
-Router::connect('/accueil', 				array('controller' => 'articles', 'action' => 'index'));
-Router::connect('/roster', 					array('controller' => 'players', 'action' => 'index'));
+Router::connect('/accueil', 				array('controller' => 'articles', 'action' => 'accueil'));
+Router::connect('/roster', 					array('controller' => 'players', 'action' => 'roster'));
 Router::connect('/media', 					array('controller' => 'screenshots', 'action' => 'index'));
-Router::connect('/archives', 				array('controller' => 'articles', 'action' => 'index'));
+Router::connect('/archives/*', 				array('controller' => 'articles', 'action' => 'archives'));
+
+
+
