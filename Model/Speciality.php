@@ -55,6 +55,19 @@ class Speciality extends AppModel {
 		)
 	);
 
+	public function getall() {
+		$specialities = $this->find('all', array(
+			'contain' => false,
+			'fields' => array(
+				'Speciality.id',
+				'Speciality.name',
+				'Speciality.state',
+				'Speciality.profession_id'
+			),
+			'order' => 'Speciality.profession_id'
+		));
+		return $specialities;
+	}
 
 		public function beforeSave($options = array())
 	{
