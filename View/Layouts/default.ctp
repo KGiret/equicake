@@ -26,21 +26,24 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<?php echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<?php
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('style');
+		echo $this->Html->script('jquery.infinitecarousel');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+		
 </head>
 <body>
 	<div id="container">
 		<div id="header">
 			<!-- <h1 id="home"><?php //echo $this->Html->link('/'); ?></h1> -->
-			<a href="/" id="home"></a>
+			<a href="./" id="home"></a>
 			
 
 			<ul id="top_menu">
@@ -50,13 +53,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</ul>
 		
 		<ul id="nav">
-			<li id="nav1" 
-			><a href="accueil">News</a></li>
+			<li id="nav1"><a href="<?php echo _racine_ ?>accueil">News</a></li>
 			<li id="nav2"><a href="http://equinoxx.forumpro.fr/" target="blank">Forum</a></li>
-			<li id="nav3" ><a href="roster" >Roster</a></li>
-			<li id="nav4" ><a href="media">Médias</a></li>
+			<li id="nav3"><a href="<?php echo _racine_ ?>roster" >Roster</a></li>
+			<li id="nav4"><a href="<?php echo _racine_ ?>media">Médias</a></li>
 			<li id="nav5"><a href="http://equinoxx.forumpro.fr/f3-candidature" target="blank">Apply</a></li>
-			<li id="nav6" ><a href="archives">Archives</a></li>
+			<li id="nav6" ><a href="<?php echo _racine_ ?>archives">Archives</a></li>
 		</ul>
 
 		</div>
@@ -69,12 +71,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="footer">
 			<p>Copyright Guilde EquinoXx 2014</p>
 			<ul>
-				<li><a href="accueil">News</a></li>
-				<li><a href="roster" >Roster</a></li>
-				<li><a href="media">Média</a></li>
-				<li><a href="recrutement">Recrutement</a></li>
-				<li><a href="archives">Archives</a></li>
-				<li ><a href="mentions">Mentions légales</a></li>	
+				<li><a href="./accueil">News</a></li>
+				<li><a href="./roster" >Roster</a></li>
+				<li><a href="./media">Média</a></li>
+				<li><a href="./recrutement">Recrutement</a></li>
+				<li><a href="./archives">Archives</a></li>
+				<li ><a href="./mentions">Mentions légales</a></li>	
 				<li id="footer_last"><a href="#"><?php echo $this->Html->image('haut.png'); ?></a></li>
 			</ul>
 
